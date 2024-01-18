@@ -1,0 +1,182 @@
+.home-footer {
+    margin-top: 20px;
+    position: relative;
+
+    .download-footer {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0 20px;
+        position: relative;
+        width: 100%;
+
+        .keywords-bar {
+            margin-bottom: 10px;
+            width: 800px;
+
+            .bar-title {
+                font-weight: 700;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            .bar-list {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                line-height: 1.7;
+                margin-left: -20px;
+
+                .bar-item {
+                    flex-shrink: 0;
+                    margin-left: 20px;
+                    text-decoration: underline;
+                    transition: .2s;
+                }
+            }
+            .bar-img {
+                height: 64px;
+                margin-bottom: 12px;
+                width: auto;
+            }
+        }
+    }
+
+    .characteristic-footer {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 56px 20px;
+        position: relative;
+
+        &::before {
+            background: #fafafa;
+            bottom: 0;
+            content: "";
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translate(-50%);
+            width: 100vw;
+            z-index: -1;
+        }
+
+        .char-item {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+
+            .char-image {
+                border-radius: 50%;
+                height: 44px;
+                margin-right: 17px;
+                width: 44px;
+            }
+
+            .char-wrap {
+                color: #9d9fb8;
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+
+                .char-lable {
+                    color: #41435d;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+    .company-footer {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
+        padding: 56px 0;
+
+        .company-footer__wrap {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 48px;
+            width: 100%;
+
+            .article-list {
+                color: #41435d;
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                text-align: center;
+
+                .article-list__label {
+                    color: #41435d;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 18px;
+
+                    .article-list__item {
+                        color: #41435d;
+                        margin-top: 12px;
+                    }
+                }
+                .qrcode-img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+
+        .footer-addr {
+            color: #41435d;
+            font-size: 12px;
+            line-height: 2;
+            text-align: center;
+
+            .footer-addr__wrap {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                color: #41435d;
+                font-size: 12px;
+                justify-content: center;
+                margin-left: -16px;
+
+                .footer-addr__item {
+                    margin-left: 16px;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+    
+                    .footer-addr__icon {
+                        margin-right: 6px;
+                        max-height: 14px;
+                        max-width: 14px;
+                    }
+                }
+            }
+
+            
+        }
+
+        .footer-link {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: -36px;
+            margin-top: 16px;
+
+            .footer-link__item {
+                height: 40px;
+                margin-left: 36px;
+                width: auto;
+            }
+        }
+    }
+}

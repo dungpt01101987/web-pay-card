@@ -1,0 +1,60 @@
+.detail-category {
+    align-items: flex-start;
+    background: linear-gradient(180deg,#e7f3ff,#fff);
+    border: 1px solid #dbe9f8;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 28px;
+    padding: 25px 12px 30px;
+    position: relative;
+
+    .charge-goods {
+        grid-gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(3,180px);
+
+        .charge-goods-item {
+            background: #fff;
+            border: 1px solid #dbe9f8;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            padding: 18px 12px;
+            position: relative;
+
+            .charge-goods__icon {
+                flex-shrink: 0;
+                height: 60px;
+                margin-right: 8px;
+                width: 60px;
+            }
+            .charge-goods__info {
+                color: #9d9fb8;
+                font-size: 12px;
+                line-height: 1.5;
+                overflow: hidden;
+
+                .charge-goods__title {
+                    color: #41435d;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+                    padding: 1px 0;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .charge-goods__desc {
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}

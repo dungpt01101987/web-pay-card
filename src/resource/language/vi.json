@@ -1,0 +1,12 @@
+{
+    "auth.signin.title": "Đăng nhập",
+    "form.email.label": "Email",
+    "form.email.errorMessage.empty": "Vui lòng nhập địa chỉ Email.",
+    "form.email.placeholder": "Địa chỉ email của bạn là gì?...",
+    "form.password.label": "Mật khẩu",
+    "form.password.placeholder": "Mật khẩu của bạn là gì?...",
+    "form.password.errorMessage.empty": "Vui lòng nhập mật khẩu.",
+    "form.signIn.buttonSubmit": "Đăng nhập",
+    "form.signIn.moveToSignUp": "Đăng ký tài khoản",
+    "form.signin.forgotPassword": "Quên mật khẩu"
+}

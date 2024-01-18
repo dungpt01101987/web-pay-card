@@ -1,0 +1,12 @@
+{
+    "auth.signin.title": "Sign In",
+    "form.email.label": "Email",
+    "form.email.errorMessage.empty": "Please enter your email address.",
+    "form.email.placeholder": "What is your email address?...",
+    "form.password.label": "Password",
+    "form.password.placeholder": "What is your password?...",
+    "form.password.errorMessage.empty": "Please enter your password.",
+    "form.signIn.buttonSubmit": "Login",
+    "form.signIn.moveToSignUp": "Register account",
+    "form.signin.forgotPassword": "Forgot password"
+}
