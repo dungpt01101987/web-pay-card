@@ -1,5 +1,5 @@
 const routes = {
-    home: '/',
+    home: '/web-pay-card',
     detailProduct: '/detail-product',
 };
 
