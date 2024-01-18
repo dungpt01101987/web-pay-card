@@ -68,7 +68,23 @@
                 padding: 0 10px;
                 position: relative;
                 text-align: center;
+
+                &.active {
+                    background: linear-gradient(180deg,#fff,#dbe9f8);
+                    border: 1px solid #1479ff;
+                    box-sizing: border-box;
+                    color: #1479ff;
+                }
             }
         }
+    }
+
+    .info-num {
+        align-items: center;
+        color: #41435d;
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        margin-top: 24px;
     }
 }

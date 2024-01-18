@@ -14,6 +14,11 @@
         width: 200px;
         word-break: break-all;
 
+        &.active {
+            box-shadow: 2px 2px 10px #1479ff80;
+            color: #fff;
+        }
+
         &::before {
             background: #dbe9f8;
             content: "";
@@ -37,12 +42,7 @@
             right: 0;
             top: 0;
         }
-
-        &.active {
-            box-shadow: 2px 2px 10px #1479ff80;
-            color: #fff;
-        }
-
+        
         .charge-header__wrap {
             align-items: center;
             bottom: 0;
@@ -63,6 +63,7 @@
             }
             .charge-header__name {
                 max-width: 7em;
+                font-size: 16px;
             }
         }
     }
@@ -77,4 +78,15 @@
     margin-top: 28px;
     padding: 25px 12px 30px;
     position: relative;
+
+    .charge-main__arrow {
+        content: "";
+        height: 40px;
+        left: 40px;
+        position: absolute;
+        top: 0;
+        transform: translateY(calc(-100% + 12px));
+        transition: .1s;
+        width: 140px;
+    }
 }
