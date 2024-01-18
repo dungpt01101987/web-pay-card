@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/web-pay-card/static/css/main.561a10a8.css",
+    "main.js": "/web-pay-card/static/js/main.899f32f5.js",
+    "static/js/514.f233ed9d.chunk.js": "/web-pay-card/static/js/514.f233ed9d.chunk.js",
+    "static/js/340.e7260273.chunk.js": "/web-pay-card/static/js/340.e7260273.chunk.js",
+    "static/media/2.webp": "/web-pay-card/static/media/2.425c0ae0f466df435eec.webp",
+    "static/media/1.webp": "/web-pay-card/static/media/1.9e041532501852f7be26.webp",
+    "static/media/3.webp": "/web-pay-card/static/media/3.48f617d5e243b7a8a086.webp",
+    "static/media/biaoti2.png": "/web-pay-card/static/media/biaoti2.7186952d627eebbc3508.png",
+    "static/media/duokaitou.webp": "/web-pay-card/static/media/duokaitou.6b5869ebabf125e46bed.webp",
+    "static/media/image_top1_new.webp": "/web-pay-card/static/media/image_top1_new.42bb31c35290bbb64546.webp",
+    "static/media/DuuyinTopUp.webp": "/web-pay-card/static/media/DuuyinTopUp.87f4cea5b27e092bfe27.webp",
+    "static/media/slick.svg": "/web-pay-card/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/web-pay-card/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/web-pay-card/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/tab4.webp": "/web-pay-card/static/media/tab4.5f3ee8a22d2fc1e6d1bc.webp",
+    "static/media/slick.woff": "/web-pay-card/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/tab3.webp": "/web-pay-card/static/media/tab3.356b965487b2bd464343.webp",
+    "static/media/tab5.webp": "/web-pay-card/static/media/tab5.e51a6b7d67dbc3d73120.webp",
+    "static/media/tab6.webp": "/web-pay-card/static/media/tab6.7cdff348b5060a529d38.webp",
+    "static/media/tab2.webp": "/web-pay-card/static/media/tab2.1066694fec9f598cd6f7.webp",
+    "static/media/product.webp": "/web-pay-card/static/media/product.dae66434537730e61d65.webp",
+    "index.html": "/web-pay-card/index.html",
+    "main.561a10a8.css.map": "/web-pay-card/static/css/main.561a10a8.css.map",
+    "main.899f32f5.js.map": "/web-pay-card/static/js/main.899f32f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.561a10a8.css",
+    "static/js/main.899f32f5.js"
+  ]
+}
