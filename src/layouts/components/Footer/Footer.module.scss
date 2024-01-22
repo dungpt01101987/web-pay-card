@@ -13,6 +13,11 @@
         position: relative;
         width: 100%;
 
+        // Mobile
+        @media (max-width: 991px) {
+            display: none;
+        }
+
         .keywords-bar {
             margin-bottom: 10px;
             width: 800px;
@@ -54,6 +59,14 @@
         justify-content: space-between;
         padding: 56px 20px;
         position: relative;
+
+        // Mobile
+        @media (max-width: 767px) {
+            align-items: normal;
+            flex-direction: column;
+            padding: 10px 10px 10px 10px;
+            position: unset;
+        }
 
         &::before {
             background: #fafafa;
@@ -102,6 +115,11 @@
         flex-direction: column;
         justify-content: center;
         padding: 56px 0;
+
+        // Mobile
+        @media (max-width: 767px) {
+            display: none;
+        }
 
         .company-footer__wrap {
             display: flex;

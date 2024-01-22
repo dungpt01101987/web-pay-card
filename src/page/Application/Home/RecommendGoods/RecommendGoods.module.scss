@@ -97,6 +97,8 @@
             .rank-list__wrap {
                 position: relative;
                 z-index: 2;
+                border: 1px solid #dbe9f8;
+                border-radius: 12px;
 
                 .list-tab {
                     display: flex;

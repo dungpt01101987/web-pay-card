@@ -1,6 +1,11 @@
 .charge-header {
     display: flex;
 
+    // Tablet + mobile: width < 1024px
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
     .charge-header__item {
         background: #dbe9f8;
         border-radius: 25px;
@@ -78,6 +83,11 @@
     margin-top: 28px;
     padding: 25px 12px 30px;
     position: relative;
+
+    // Tablet + mobile: width < 1024px
+    @media (max-width: 1024px) {
+        display: none;
+    }
 
     .charge-main__arrow {
         content: "";

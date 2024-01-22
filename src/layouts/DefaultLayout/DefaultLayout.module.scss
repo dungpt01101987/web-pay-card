@@ -7,15 +7,17 @@
     overflow-x: hidden;
     width: 100%;
 
-    // Mobile
-    @media (max-width: 767px) {
-        width: 80%;
+    // Mobile: width < 740px
+    @media (max-width: 740px) {
     }
 
-    // // Tablet
-    // @media (min-width: 768px) and (max-width: 991px) {
-    //     width: 850px;
-    // }
+    // Tablet: 741 < width < 1024px
+    @media (min-width: 741px) and (max-width: 1024px) {
+    }
+
+    // Tablet + mobile: width < 1024px
+    @media (max-width: 1024px) {
+    }
 }
 
 .layout-default-container {
@@ -23,4 +25,9 @@
     flex: 1;
     flex-direction: column;
     width: 1200px;
+
+    // Tablet: 741 < width < 1024px
+    @media (min-width: 741px) and (max-width: 1024px) {
+        width: 100%;
+    }
 }

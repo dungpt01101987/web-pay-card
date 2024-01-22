@@ -13,7 +13,27 @@ const TopBar = () => {
     };
     return (
         <div className={cx('top-bar-wrap')}>
-            <ol className={cx('nav-feature')}>
+            <div className={cx('nav-feature-item')}>
+                <span className={cx('yellow')}> Please Log In </span>
+            </div>
+            <div className={cx('nav-feature-item')}>
+                My Orders
+            </div>
+            <div className={cx('nav-feature-item')}>
+                <div className={cx('el-dropdown')}>
+                    <select
+                        id="languageSelect"
+                        value={selectedLanguage}
+                        onChange={handleLanguageChange}
+                        className={cx('select-language')}
+                    >
+                        <option value="en">English</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </div>
+                <i className={cx('el-icon')}></i>
+            </div>
+            {/* <ol className={cx('nav-feature')}>
                 <li className={cx('nav-feature-item')}>
                     <span className={cx('yellow')}> Please Log In </span>
                 </li>
@@ -33,7 +53,7 @@ const TopBar = () => {
                     <i className={cx('el-icon')}></i>
                 </li>
 
-            </ol>
+            </ol> */}
         </div>
 
     );
