@@ -7,6 +7,9 @@
     background: #f5f5f5;
     justify-content: center;
     padding: 2px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 
     .top-bar-wrap {
         align-items: center;
@@ -21,26 +24,35 @@
             margin-left: auto;
             margin-right: -30px;
 
+            // Mobile
+            @media (max-width: 991px) {
+                margin-left: 105px;
+                margin-right: revert;
+            }
+
             .nav-feature-item {
                 align-items: center;
                 cursor: pointer;
                 display: flex;
                 flex-direction: row;
                 padding: 0 24px;
-                border-right: 1px solid #c5c7d8;
+
+                &:not(:last-child) {
+                    border-right: 1px solid #c5c7d8;
+                }
+
+                // Mobile
+                @media (max-width: 767px) {
+                    padding: 0 5px;
+                    align-items: flex-end;
+                }
 
                 .yellow {
                     color: #ff8c19;
                 }
 
                 .el-dropdown {
-                    -el-dropdown-menu-box-shadow: var(--el-box-shadow-light);
-                    --el-dropdown-menuItem-hover-fill: var(--el-color-primary-light-9);
-                    --el-dropdown-menuItem-hover-color: var(--el-color-primary);
-                    --el-dropdown-menu-index: 10;
-                    color: var(--el-text-color-regular);
                     display: inline-flex;
-                    font-size: var(--el-font-size-base);
                     line-height: 1;
                     position: relative;
                     vertical-align: top;
@@ -56,7 +68,6 @@
                     --color: inherit;
                     fill: currentColor;
                     align-items: center;
-                    color: var(--color);
                     display: inline-flex;
                     font-size: inherit;
                     height: 1em;
@@ -77,11 +88,21 @@
     justify-content: center;
     padding: 10px 0;
 
-    .mid-panel-container{
+    // Mobile
+    @media (max-width: 767px) {
+        display: contents;
+    }
+
+    .mid-panel-container {
         align-items: center;
         display: flex;
         flex-direction: row;
         width: 1200px;
+
+        // Mobile
+        @media (max-width: 767px) {
+            display: contents;
+        }
 
         .mid-panel-logo {
             cursor: pointer;
@@ -106,6 +127,11 @@
                 padding: 6px 90px 6px 20px;
                 position: relative;
                 width: 500px;
+
+                // Mobile
+                @media (max-width: 767px) {
+                    width: 370px;
+                }
 
                 .search-bar-cmp {
                     border: 0;
@@ -135,6 +161,7 @@
                     right: 0;
                     top: 0;
                     width: 82px;
+                    border: none;
 
                     .el-icon {
                         --color: inherit;
@@ -167,6 +194,11 @@
                 margin-top: 6px;
                 max-width: 540px;
 
+                // Mobile
+                @media (max-width: 767px) {
+                    width: 370px;
+                }
+
                 .search-keywords-item {
                     color: #41435d;
                     cursor: pointer;
@@ -179,6 +211,13 @@
 
         .marketing-service {
             display: flex;
+
+            // Mobile
+            @media (max-width: 767px) {
+                width: 370px;
+                text-align: center;
+            }
+
 
             .marketing-service-item {
                 align-items: center;
@@ -195,7 +234,7 @@
 
 .nav-wrapper {
     align-items: center;
-    background: linear-gradient(135deg,#2db1ff,#1479ff);
+    background: linear-gradient(135deg, #2db1ff, #1479ff);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -216,7 +255,8 @@
             &:hover {
                 background: #53b7ff;
             }
-            &:active {
+
+            &.active {
                 background: #53b7ff;
             }
         }

@@ -14,6 +14,7 @@ import imageTab3 from 'assets/img/FastChange/tab3.webp';
 import imageTab4 from 'assets/img/FastChange/tab4.webp';
 import imageTab5 from 'assets/img/FastChange/tab5.webp';
 import imageTab6 from 'assets/img/FastChange/tab6.webp';
+import { isMobile } from 'react-device-detect';
 
 // import Tabs from 'components/Tabs';
 // import Tab from 'components/Tab';
@@ -62,10 +63,14 @@ const listCategory = [
     },
 ];
 
-
 const FastCharge = () => {
     const [activeTab, setActiveTab] = useState('tab1');
     const [left, setLeft] = useState('40px');
+
+    let limit = 6;
+    if (isMobile) {
+        limit = 2;
+    }
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
@@ -97,7 +102,7 @@ const FastCharge = () => {
     return (
         <>
             <div className={cx('charge-header')}>
-                {listCategory.map((category) => (
+                {listCategory.filter((category, index) => index < limit).map((category, index) => (
                     <div
                         key={category.key}
                         className={cx('charge-header__item', 'active')}

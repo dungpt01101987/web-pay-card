@@ -2,6 +2,13 @@
     display: flex;
     margin-top: 48px;
 
+    // Mobile
+    @media (max-width: 767px) {
+        max-width: 350px;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
     .left-panel {
         flex-shrink: 0;
         margin-right: 12px;
@@ -15,11 +22,16 @@
         .panel-goods {
             grid-gap: 12px;
             display: grid;
-            grid-template-columns: repeat(5,164px);
+            grid-template-columns: repeat(5, 164px);
+
+            // Mobile
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(2, 164px);
+            }
 
             .panel-goods__item {
                 align-items: center;
-                background: linear-gradient(180deg,#fff,#eff6fd);
+                background: linear-gradient(180deg, #fff, #eff6fd);
                 border: 1px solid #dbe9f8;
                 border-radius: 12px;
                 display: flex;
@@ -29,16 +41,18 @@
                 justify-content: center;
 
                 .panel-goods__icon {
-                    background: rgba(0,0,0,.02);
+                    background: rgba(0, 0, 0, .02);
                     height: 70px;
                     margin-bottom: 16px;
                     width: 70px;
                 }
+
                 .panel-goods__name {
                     font-size: 16px;
                     max-width: 9em;
                     word-break: break-all;
                 }
+
                 .panel-goods__btn {
                     background: #fff9f6;
                     border: 1px solid #ff6010;
@@ -56,6 +70,11 @@
     .right-panel {
         flex: 1;
         overflow: hidden;
+
+        // Mobile
+        @media (max-width: 767px) {
+            margin-top: 10px;
+        }
 
         .rank-list {
             position: relative;
@@ -81,7 +100,7 @@
 
                 .list-tab {
                     display: flex;
-    
+
                     .list-tab__item {
                         align-items: center;
                         color: #9d9fb8;
@@ -94,7 +113,7 @@
                         min-width: 108px;
                         position: relative;
                         transition: .2s;
-    
+
                         &.active {
                             color: #111334;
                         }
@@ -116,6 +135,7 @@
                             margin-right: 8px;
                             width: 24px;
                         }
+
                         .goods-info {
                             align-items: center;
                             display: flex;
@@ -126,6 +146,7 @@
                                 margin-right: 8px;
                                 width: 40px;
                             }
+
                             .goods-info__wrap {
                                 color: #9d9fb8;
                                 font-size: 12px;
@@ -138,8 +159,9 @@
                                 }
                             }
                         }
+
                         .goods-list__btn {
-                            background: linear-gradient(135deg,#2db1ff,#1479ff);
+                            background: linear-gradient(135deg, #2db1ff, #1479ff);
                             border-radius: 17px;
                             color: #fff;
                             height: 34px;
@@ -153,7 +175,7 @@
         }
 
         .article-panel {
-            background: linear-gradient(180deg,#fff,rgba(231,243,255,.2));
+            background: linear-gradient(180deg, #fff, rgba(231, 243, 255, .2));
             border: 1px solid #dbe9f8;
             border-radius: 12px;
             margin-top: 12px;

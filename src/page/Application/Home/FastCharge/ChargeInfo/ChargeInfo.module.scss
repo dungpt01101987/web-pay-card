@@ -49,7 +49,12 @@
         .info-options__wrap {
             grid-gap: 12px;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
+
+            // Mobile
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
             .info-options__item {
                 align-items: center;
@@ -70,7 +75,7 @@
                 text-align: center;
 
                 &.active {
-                    background: linear-gradient(180deg,#fff,#dbe9f8);
+                    background: linear-gradient(180deg, #fff, #dbe9f8);
                     border: 1px solid #1479ff;
                     box-sizing: border-box;
                     color: #1479ff;
@@ -202,7 +207,7 @@
             }
 
             .info-footer__btn {
-                background: linear-gradient(135deg,#2db1ff,#1479ff);
+                background: linear-gradient(135deg, #2db1ff, #1479ff);
                 border-radius: 25px;
                 box-shadow: 0 2px 10px #1479ff80;
                 border: 1px solid #dcdfe6;

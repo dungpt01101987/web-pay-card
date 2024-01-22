@@ -67,6 +67,26 @@ const ChargeMain = ({ title }) => {
             id: 10,
             icon: imgLook,
             name: 'Look live 5'
+        },
+        {
+            id: 11,
+            icon: imgLook,
+            name: 'Look live 5'
+        },
+        {
+            id: 12,
+            icon: imgLook,
+            name: 'Look live 5'
+        },
+        {
+            id: 13,
+            icon: imgLook,
+            name: 'Look live 5'
+        },
+        {
+            id: 14,
+            icon: imgLook,
+            name: 'Look live 5'
         }
     ];
 

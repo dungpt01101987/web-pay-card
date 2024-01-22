@@ -1,10 +1,16 @@
 .main-layout {
     display: flex;
-    height: 390px;
+    height: 410px;
+
+    // Mobile
+    @media (max-width: 767px) {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .side-bar {
-    background: linear-gradient(135deg,#2db1ff,#1479ff);
+    background: linear-gradient(135deg, #2db1ff, #1479ff);
     border-radius: 12px;
     box-sizing: border-box;
     display: flex;
@@ -12,8 +18,13 @@
     padding: 15px 15px 20px;
     width: 266px;
 
+    // Mobile
+    @media (max-width: 767px) {
+        width: 350px;
+    }
+
     .category-item {
-        border-bottom: 1px solid rgba(231,243,255,.2);
+        border-bottom: 1px solid rgba(231, 243, 255, .2);
         margin-bottom: 18px;
         padding-bottom: 12px;
 
@@ -72,7 +83,8 @@
             &::hover {
                 background-color: rgb(124, 184, 255);
                 color: #000;
-                border-color: rgb(124, 184, 255);;
+                border-color: rgb(124, 184, 255);
+                ;
             }
         }
     }
@@ -83,10 +95,21 @@
     flex: 1;
     margin: 0 12px;
     overflow: hidden;
+
+    // Mobile
+    @media (max-width: 767px) {
+        margin: 0;
+        max-width: 350px;
+    }
 }
 
 .payment-options {
-    width: 308px ;
+    width: 308px;
+
+    // Mobile
+    @media (max-width: 767px) {
+        min-width: 350px;
+    }
 
     .side-entry-item {
         border-radius: 12px;
