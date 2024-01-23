@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { createRoot } from 'react-dom/client';
 import App from 'App';
 import { IntlProvider } from 'react-intl';
@@ -32,6 +33,9 @@ const RootApp = async () => {
         <QueryClientProvider client={queryClient}>
           <IntlProvider locale={location} messages={message.default}>
             <GlobalStyles>
+              <Helmet>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              </Helmet>
               <App />
             </GlobalStyles>
           </IntlProvider>

@@ -21,7 +21,6 @@
 
         // Mobile: width < 740px
         @media (max-width: 740px) {
-            max-width: 740px;
             justify-content: flex-start;
         }
 
@@ -256,7 +255,7 @@
 
     // Mobile: width < 740px
     @media (max-width: 740px) {
-        max-width: 740px;
+        max-width: 375px;
         justify-content: flex-start;
     }
 
