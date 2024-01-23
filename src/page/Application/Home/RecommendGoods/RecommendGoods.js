@@ -104,7 +104,7 @@ const RecommendGoods = () => {
                             className={cx('list-tab')}
                             justify
                         >
-                            <Tab eventKey="salesRanking" title="Sales Ranking" className={cx('list-tab__item')}>
+                            <Tab eventKey="salesRanking" title="Sales Product Ranking" className={cx('list-tab__item')}>
                                 <div className={cx('goods-list')}>
                                     <Link to="#" className={cx('goods-list__item')}>
                                         <Image className={cx('goods-list__icon')} src={iconTop1} />

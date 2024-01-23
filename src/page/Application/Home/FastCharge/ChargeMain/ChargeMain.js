@@ -11,7 +11,7 @@ import ChargeInfo from 'page/Application/Home/FastCharge/ChargeInfo';
 const cx = classNames.bind(styles);
 
 const ChargeMain = ({ title }) => {
-    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [selectedProduct, setSelectedProduct] = useState(1);
 
     const handleIconClick = (productId) => {
         setSelectedProduct(productId);

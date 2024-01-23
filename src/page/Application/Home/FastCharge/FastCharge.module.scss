@@ -2,8 +2,8 @@
     display: flex;
 
     // Tablet + mobile: width < 1024px
-    @media (max-width: 1024px) {
-        display: none;
+    @media (max-width: 740px) {
+        margin: 10px;
     }
 
     .charge-header__item {
@@ -19,6 +19,12 @@
         width: 200px;
         word-break: break-all;
 
+        // Tablet + mobile: width < 1024px
+        @media (max-width: 740px) {
+            width: 180px;
+            height: 40px;
+        }
+
         &.active {
             box-shadow: 2px 2px 10px #1479ff80;
             color: #fff;
@@ -32,13 +38,13 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
-            transform: translate(50%,-50%);
+            transform: translate(50%, -50%);
             width: 10px;
         }
 
         &::after {
             animation: charge-fade-in-997938d8 .3s;
-            background: linear-gradient(135deg,#2db1ff,#1479ff);
+            background: linear-gradient(135deg, #2db1ff, #1479ff);
             border-radius: 25px;
             bottom: 0;
             content: "";
@@ -47,7 +53,7 @@
             right: 0;
             top: 0;
         }
-        
+
         .charge-header__wrap {
             align-items: center;
             bottom: 0;
@@ -66,6 +72,7 @@
                 margin-right: 6px;
                 width: 30px;
             }
+
             .charge-header__name {
                 max-width: 7em;
                 font-size: 16px;
@@ -76,7 +83,7 @@
 
 .charge-main {
     align-items: flex-start;
-    background: linear-gradient(180deg,#e7f3ff,#fff);
+    background: linear-gradient(180deg, #e7f3ff, #fff);
     border: 1px solid #dbe9f8;
     border-radius: 20px;
     display: flex;
@@ -85,8 +92,9 @@
     position: relative;
 
     // Tablet + mobile: width < 1024px
-    @media (max-width: 1024px) {
-        display: none;
+    @media (max-width: 740px) {
+        max-width: 355px;
+        margin-left: 10px;
     }
 
     .charge-main__arrow {

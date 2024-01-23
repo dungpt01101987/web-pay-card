@@ -1,0 +1,54 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    position: relative;
+}
+
+.menu-button {
+    background: linear-gradient(135deg, #2db1ff, #1479ff);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    /* Ẩn nút trên máy tính */
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+        /* Hiển thị nút trên thiết bị di động */
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 10;
+    left: 0;
+    height: 400px;
+    width: 250px;
+    background: linear-gradient(135deg, #2db1ff, #1479ff);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    /* Giá trị z-index cao hơn layout khác */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #555;
+}

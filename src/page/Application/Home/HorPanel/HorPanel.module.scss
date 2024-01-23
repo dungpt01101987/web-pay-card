@@ -5,6 +5,12 @@
     margin: 30px 0 32px;
     padding: 20px 0 5px 16px;
 
+    // Mobile: width < 740px
+    @media (max-width: 740px) {
+        max-width: 355px;
+        margin: 0 10px 0 10px;
+    }
+
     .hor-panel-title {
         align-items: center;
         display: flex;
@@ -22,7 +28,7 @@
 
         .panel-goods-item {
             align-items: center;
-            background: linear-gradient(180deg,#fff,#e7f3ff);
+            background: linear-gradient(180deg, #fff, #e7f3ff);
             border: 1px solid #dbe9f8;
             border-radius: 12px;
             box-sizing: border-box;
@@ -40,6 +46,7 @@
                 margin-bottom: 10px;
                 width: 70px;
             }
+
             .panel-goods__title {
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 2;

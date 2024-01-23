@@ -14,7 +14,7 @@ import imageTab3 from 'assets/img/FastChange/tab3.webp';
 import imageTab4 from 'assets/img/FastChange/tab4.webp';
 import imageTab5 from 'assets/img/FastChange/tab5.webp';
 import imageTab6 from 'assets/img/FastChange/tab6.webp';
-import { isMobile, isTablet } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 
 // import Tabs from 'components/Tabs';
 // import Tab from 'components/Tab';
@@ -32,7 +32,7 @@ const listCategory = [
         key: 'tab1'
     },
     {
-        label: "Popular Live Broadcasts",
+        label: "Broadcasts",
         content: "Popular Live Broadcasts Content",
         image: imageTab2,
         key: 'tab2'
@@ -68,8 +68,9 @@ const FastCharge = () => {
     const [left, setLeft] = useState('40px');
 
     let limit = 6;
-    console.log("check isMobile: ", isMobile);
-    console.log("check isTablet: ", isTablet);
+    if (isMobile) {
+        limit = 2;
+    }
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);

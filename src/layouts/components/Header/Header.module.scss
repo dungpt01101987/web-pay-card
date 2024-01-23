@@ -40,7 +40,7 @@
 
             // Mobile
             @media (max-width: 767px) {
-                padding: 0 5px;
+                padding: 0 10px;
                 align-items: flex-end;
             }
 
@@ -141,9 +141,8 @@
 
                 // Mobile
                 @media (max-width: 740px) {
-                    margin-left: 10px;
-                    max-width: 290px;
-                    margin-top: 10px;
+                    max-width: 355px;
+                    margin: 10px;
                 }
 
                 .search-bar-cmp {
@@ -209,6 +208,7 @@
 
                 // Mobile
                 @media (max-width: 740px) {
+                    display: none;
                     margin-left: 10px;
                     max-width: 290px;
                     margin-top: 10px;
@@ -253,6 +253,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    // Mobile: width < 740px
+    @media (max-width: 740px) {
+        max-width: 740px;
+        justify-content: flex-start;
+    }
+
+    // Tablet: 741 < width < 1024px
+    @media (min-width: 741px) and (max-width: 1024px) {
+        max-width: 1024px;
+    }
 
     .nav-header-wrapper {
         display: flex;

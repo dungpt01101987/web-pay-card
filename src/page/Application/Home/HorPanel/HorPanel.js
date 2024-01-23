@@ -9,6 +9,7 @@ import styles from 'page/Application/Home/HorPanel/HorPanel.module.scss';
 import image1 from 'assets/img/hor-panel/1.webp';
 import imageTitle from 'assets/img/hor-panel/编组 13.png';
 import { Link } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
 
 const cx = classNames.bind(styles);
 
@@ -74,10 +75,14 @@ const HorPanel = () => {
         }
     ];
 
+    let slideShow = 8;
+    if (isMobile) {
+        slideShow = 3;
+    }
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 8,
+        slidesToShow: slideShow,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
