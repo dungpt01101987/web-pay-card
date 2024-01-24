@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Image from 'react-bootstrap/Image';
+import { isMobile } from 'react-device-detect';
 
 import classNames from 'classnames/bind';
 import styles from './ChargeMain.module.scss';
@@ -90,10 +91,15 @@ const ChargeMain = ({ title }) => {
         }
     ];
 
+    let limit = 14;
+    if (isMobile) {
+        limit = 6;
+    }
+
     return (
         <div className={cx('charge-container')}>
             <div className={cx('charge-goods')}>
-                {products.map((product) => (
+                {products.filter((product, index) => index < limit).map((product, index) => (
                     <div
                         key={product.id}
                         onClick={() => handleIconClick(product.id)}

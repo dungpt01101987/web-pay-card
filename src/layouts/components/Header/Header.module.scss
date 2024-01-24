@@ -21,7 +21,7 @@
 
         // Mobile: width < 740px
         @media (max-width: 740px) {
-            justify-content: flex-start;
+            width: 100%;
         }
 
         // Tablet: 741 < width < 1024px
@@ -96,7 +96,9 @@
     .mid-panel-container {
         align-items: center;
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         width: 1200px;
 
         // Mobile
@@ -140,7 +142,7 @@
 
                 // Mobile
                 @media (max-width: 740px) {
-                    max-width: 355px;
+                    width: 95%;
                     margin: 10px;
                 }
 
@@ -255,7 +257,6 @@
 
     // Mobile: width < 740px
     @media (max-width: 740px) {
-        max-width: 375px;
         justify-content: flex-start;
     }
 

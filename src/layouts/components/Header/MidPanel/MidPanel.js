@@ -23,7 +23,7 @@ const MidPanel = () => {
                 <div className={cx('search-bar-wrap')}>
                     <input
                         type="search"
-                        placeholder="Please enter the name of the product or game"
+                        placeholder="Please enter the name ..."
                         aria-label="Search"
                         className={cx('search-bar-cmp')}
                     />

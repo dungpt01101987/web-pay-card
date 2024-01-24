@@ -14,7 +14,7 @@ import imageTab3 from 'assets/img/FastChange/tab3.webp';
 import imageTab4 from 'assets/img/FastChange/tab4.webp';
 import imageTab5 from 'assets/img/FastChange/tab5.webp';
 import imageTab6 from 'assets/img/FastChange/tab6.webp';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isTablet } from 'react-device-detect';
 
 // import Tabs from 'components/Tabs';
 // import Tab from 'components/Tab';
@@ -68,8 +68,12 @@ const FastCharge = () => {
     const [left, setLeft] = useState('40px');
 
     let limit = 6;
-    if (isMobile) {
+    console.log("check isTablet: ", isTablet);
+    console.log("check isMobile: ", isMobile);
+    if (isMobile && !isTablet) {
         limit = 2;
+    } else if (isMobile && isTablet) {
+        limit = 3;
     }
 
     const handleTabClick = (tab) => {

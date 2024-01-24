@@ -3,15 +3,21 @@
     margin-top: 48px;
 
     // Mobile
-    @media (max-width: 767px) {
-        max-width: 350px;
+    @media (max-width: 1024px) {
         flex-direction: column;
-        margin-left: 10px;
     }
 
     .left-panel {
         flex-shrink: 0;
         margin-right: 12px;
+        border: 1px solid #dbe9f8;
+        border-radius: 12px;
+        padding: 10px;
+
+        // Mobile
+        @media (max-width: 1024px) {
+            margin-right: 0px;
+        }
 
         .left-panel__title {
             height: 24px;
@@ -26,7 +32,13 @@
 
             // Mobile
             @media (max-width: 767px) {
-                grid-template-columns: repeat(2, 170px);
+                // grid-template-columns: repeat(2, 160px);
+                grid-template-columns: repeat(auto-fill, minmax(160px, 2fr));
+            }
+
+            // Tablet: 741 < width < 1024px
+            @media (min-width: 741px) and (max-width: 1024px) {
+                grid-template-columns: repeat(auto-fill, minmax(198px, 3fr));
             }
 
             .panel-goods__item {
